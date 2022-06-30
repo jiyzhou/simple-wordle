@@ -14,6 +14,18 @@ At the beginning of each round, a random word is chosen from [words_valid.txt](w
 
 Before comparing the guess to the target, the validity of the guess must be checked first, that is, if the guess is a valid English word. If so, it should appear in the list [words_valid.txt](words_valid.txt). To search a word in the list efficiently, a trie is built. The key lookup complexity remains proportional to the key size this way.
 
+## Get Started
+Since the word filtering has been completed and the executable file is here now, there is no other prerequisite to start the game.
+
+Enter the following command in terminal:
+```
+./main
+```
+
+You can use go tools to run or rebuild [processWords.go](processWords.go) and [main.go](main.go) after modifying the content.
+
+The game will give you six tries to guess the wordle. Enter a five-letter word for each time. If the word is not a valid English word or its length exceeds 5, you can enter another valid word without wasting a try. The program will color the guess to indicate some information. Green means the letter is right where it should be. Yellow means it appears in the target word, but the postion is not correct. White means it is a total miss. Consider your next step according to the feedbacks!
+
 ## Acknowledgments
 * [List Of English Words](https://github.com/dwyl/english-words)
 * [Using colors with printf](https://stackoverflow.com/questions/5412761/using-colors-with-printf)
