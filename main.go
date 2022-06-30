@@ -47,7 +47,7 @@ func main() {
 	checkErr(err)
 	targetWord := string(chosenWord[:wordLength]) // convert bytes into string
 
-	fmt.Printf("Hey welcome to the wordle game! You have %v tries to gess the wordle. Each guess must be a valid %v letter word in lowercase. Hit the return to submit it.\n", maxTries, wordLength)
+	fmt.Printf("Hey welcome to the wordle game! You have %v tries to guess the wordle. Each guess must be a valid %v letter word in lowercase. Hit the return to submit it.\n", maxTries, wordLength)
 
 	i := 1
 	for i <= maxTries {

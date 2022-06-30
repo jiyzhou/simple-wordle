@@ -30,9 +30,3 @@ func processWords() {
 		log.Fatal(err)
 	}
 }
-
-func checkErr(err error) {
-	if err != nil {
-		panic(err)
-	}
-}
